@@ -23,7 +23,7 @@ Check out these amazing works leveraging CLIP for number problems!
 - [OrdinalCLIP: Learning Rank Prompts for Language-Guided Ordinal Regression (NeurIPS2022)](https://github.com/xk-huang/OrdinalCLIP)
 - [DepthCLIP: Can Language Understand Depth? (ACM MM2022)](https://github.com/Adonis-galaxy/DepthCLIP?tab=readme-ov-file#depthclip-can-language-understand-depth)
 - [CrowdCLIP: Unsupervised Crowd Counting via Vision-Language Model (CVPR2023)](https://github.com/dk-liang/CrowdCLIP)
-- [L2RCLIP: Learning-to-Rank Meets Language: Boosting Language-Driven Ordering Alignment for Ordinal Classification](https://github.com/raywang335/L2RCLIP)
+- [L2RCLIP: Learning-to-Rank Meets Language: Boosting Language-Driven Ordering Alignment for Ordinal Classification (NeurIPS2023)](https://github.com/raywang335/L2RCLIP)
 - [Teach CLIP to Count to Ten (ICCV2023)](https://teaching-clip-to-count.github.io/)
 
 
