@@ -4,7 +4,7 @@ This repository contains PyTorch implementation of "Teach CLIP to Develop a Numb
 
 Created by [Du Yao](https://scholar.google.com.hk/citations?user=8krbrWsAAAAJ&hl=zh-CN), [Zhai Qiang](https://scholar.google.com.hk/citations?hl=zh-CN&user=3I5VuhUAAAAJ), [Dai Weihang](https://scholar.google.com.hk/citations?hl=zh-CN&user=4iTfHyQAAAAJ), [Li Xiaomeng](https://xmengli.github.io/)\*
 
-
+## Overview of NumCLIP
 ![intro](figs/numclip.png)
 
 
