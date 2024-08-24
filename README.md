@@ -7,14 +7,18 @@ Created by [Du Yao](https://scholar.google.com.hk/citations?user=8krbrWsAAAAJ&hl
 ## Overview of NumCLIP
 ![intro](figs/numclip.png)
 
+## Requirements
+We utilize the code base of [OrdinalCLIP](https://github.com/xk-huang/OrdinalCLIP). Please follow their instructions to prepare the environment and datasets.
+
+##
+
+
 
 
 ## Acknowledgement
-
 This code is mainly based on [OrdinalCLIP](https://github.com/xk-huang/OrdinalCLIP). Thanks to their great work.
 
 ## What's More
-
 Check out these amazing works leveraging CLIP for number problems!
 
 - [OrdinalCLIP: Learning Rank Prompts for Language-Guided Ordinal Regression (NeurIPS2022)](https://github.com/xk-huang/OrdinalCLIP)
@@ -25,7 +29,6 @@ Check out these amazing works leveraging CLIP for number problems!
 
 
 ## Citation
-
 If you find this codebase helpful, please consider to cite:
 
 ```
