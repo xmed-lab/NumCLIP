@@ -8,9 +8,6 @@ Created by [Du Yao](https://scholar.google.com.hk/citations?user=8krbrWsAAAAJ&hl
 ![intro](figs/numclip.png)
 
 
-## License
-
-MIT License
 
 ## Acknowledgement
 
