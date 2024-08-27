@@ -15,8 +15,7 @@ We utilize the code base of [OrdinalCLIP](https://github.com/xk-huang/OrdinalCLI
 
 
 
-## Acknowledgement
-This code is mainly based on [OrdinalCLIP](https://github.com/xk-huang/OrdinalCLIP). Thanks to their great work.
+
 
 ## What's More
 Check out these amazing works leveraging CLIP for number problems!
