@@ -12,14 +12,14 @@ The framework of NumCLIP, aiming to teach CLIP to develop a strong number sense 
 
 ## Quick Preview
 
-### Img2Lang Concept
+### *1. Img2Lang Concept*
 NumCLIP mimics human numerical cognition: mapping an image feature to a language concept first, and then reasoning the number.
 <p align="center">
     <img src="figs/img_lang_num.png" width="500"> <br>
 
 This paradigm can be condcuted in a coarse-to-fine manner. From that we elegantly convert an dense regression task into a simple and coarse classification problem, which not only smoothly mitigates the insufficient number caption issue, but also effectively utilises/recalls the pre-trained/available concept alignment learned by CLIP.
 
-### Cross-modal Ranking-based Feature Regularization
+### *2. Cross-modal Ranking-based Feature Regularization*
 The cross-modal negative samples are pushed away with ordinal label distance alignment.
 ```python
     def compute_ce_dis_loss(self,logits,y,d):
