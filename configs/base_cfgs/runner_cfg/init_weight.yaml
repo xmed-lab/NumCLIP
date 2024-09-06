@@ -1,0 +1,3 @@
+runner_cfg:
+  load_weights_cfg:
+    init_model_weights: null

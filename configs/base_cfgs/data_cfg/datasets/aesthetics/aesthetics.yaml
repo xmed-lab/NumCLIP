@@ -1,0 +1,14 @@
+data_cfg:
+  train_images_root: /home/ydubf/download/Aesthetics/beauty_dataset
+  val_images_root: /home/ydubf/download/Aesthetics/beauty_dataset
+  test_images_root: /home/ydubf/download/Aesthetics/beauty_dataset
+  train_data_file: /home/ydubf/download/Aesthetics/labels/people_train.txt
+  val_data_file: /home/ydubf/download/Aesthetics/labels/people_test.txt
+  test_data_file: /home/ydubf/download/Aesthetics/labels/people_test.txt
+  # train_data_file: /home/ydubf/download/Aesthetics/labels/people/fold_0/train_m.txt
+  # val_data_file: /home/ydubf/download/Aesthetics/labels/people/fold_0/val_m.txt
+  # test_data_file: /home/ydubf/download/Aesthetics/labels/people/fold_0/test_m.txt
+runner_cfg:
+  model_cfg:
+    prompt_learner_cfg:
+      num_ranks: 101

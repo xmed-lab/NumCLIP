@@ -1,0 +1,4 @@
+runner_cfg:
+  model_cfg:
+    prompt_learner_cfg:
+      init_context: 'diabetic retinopathy assessment: this is a patient fundus image with' 

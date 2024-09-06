@@ -1,0 +1,11 @@
+data_cfg:
+  train_images_root: /home/ydubf/download/HistoricalColor-ECCV2012/data/imgs/decades
+  val_images_root: /home/ydubf/download/HistoricalColor-ECCV2012/data/imgs/decades
+  test_images_root: /home/ydubf/download/HistoricalColor-ECCV2012/data/imgs/decades
+  train_data_file: /home/ydubf/download/HistoricalColor-ECCV2012/data/labels/fold_0/train.txt
+  val_data_file: /home/ydubf/download/HistoricalColor-ECCV2012/data/labels/fold_0/val.txt
+  test_data_file: /home/ydubf/download/HistoricalColor-ECCV2012/data/labels/fold_0/test.txt
+runner_cfg:
+  model_cfg:
+    prompt_learner_cfg:
+      num_ranks: 101
