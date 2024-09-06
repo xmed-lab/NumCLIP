@@ -7,6 +7,32 @@ Created by [Du Yao](https://scholar.google.com.hk/citations?user=8krbrWsAAAAJ&hl
 ## Overview of NumCLIP
 ![intro](figs/numclip.png)
 
+## Quick Preview
+
+
+```python
+    def compute_ce_dis_loss(self,logits,y,d):
+
+        list_target = list(range(d))
+        target = torch.Tensor(list_target).to('cuda:0')
+        target = torch.unsqueeze(target,1)
+        ls_weight = []
+        for i in range(len(y)):
+            label_inv_ranks = (torch.abs(y[i] - target).transpose(0,1))
+            label_inv_ranks_norm = (torch.abs(y[i] - target).transpose(0,1)) / torch.sum(label_inv_ranks,dim=1) * (d-1)
+            label_inv_ranks_norm = torch.squeeze(label_inv_ranks_norm,0)
+            label_inv_ranks_norm[y[i]] = 1.0
+            ls_label_inv_ranks_norm = label_inv_ranks_norm.detach().cpu().numpy().tolist()
+            ls_weight.append(ls_label_inv_ranks_norm)
+
+        weight = torch.Tensor(ls_weight).to('cuda:0')
+
+        logits_weight = logits * weight
+        loss = self.ce_loss_func(logits_weight, y)
+
+        return loss
+```
+
 ## Requirements
 We utilize the code base of [OrdinalCLIP](https://github.com/xk-huang/OrdinalCLIP). Please follow their instructions to prepare the environment and datasets.
 
