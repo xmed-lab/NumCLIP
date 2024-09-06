@@ -8,8 +8,6 @@ Created by [Du Yao](https://scholar.google.com.hk/citations?user=8krbrWsAAAAJ&hl
 
 The framework of NumCLIP, aiming to teach CLIP to develop a strong number sense for ordinal regression. 
 
-Replacing pure numbers as common language descriptions allow better utilising the pre-training knowledge, and cross-modal ranking-based feature regularisation ensures both semantic and ordinal alignment.
-
 ![intro](figs/numclip.png)
 
 ## Quick Preview
