@@ -10,10 +10,12 @@ Created by [Du Yao](https://scholar.google.com.hk/citations?user=8krbrWsAAAAJ&hl
 ## Requirements
 We utilize the code base of [OrdinalCLIP](https://github.com/xk-huang/OrdinalCLIP). Please follow their instructions to prepare the environment and datasets.
 
-##
+## Model Training
+Before training the model, move `regclipssr.py` to `./ordinalclip/models/`, and `runner_ssr.py` to `./ordinalclip/runner/` accordingly.
 
-
-
+```bash
+sh scripts/run_regclipssr.sh
+```
 
 
 
