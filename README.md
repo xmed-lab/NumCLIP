@@ -5,12 +5,24 @@ This repository contains PyTorch implementation of "Teach CLIP to Develop a Numb
 Created by [Du Yao](https://scholar.google.com.hk/citations?user=8krbrWsAAAAJ&hl=zh-CN), [Zhai Qiang](https://scholar.google.com.hk/citations?hl=zh-CN&user=3I5VuhUAAAAJ), [Dai Weihang](https://scholar.google.com.hk/citations?hl=zh-CN&user=4iTfHyQAAAAJ), [Li Xiaomeng](https://xmengli.github.io/)\*
 
 ## Overview of NumCLIP
+
+The framework of NumCLIP, aiming to teach CLIP to develop a strong number sense for ordinal regression. 
+
+Replacing pure numbers as common language descriptions allow better utilising the pre-training knowledge, and cross-modal ranking-based feature regularisation ensures both semantic and ordinal alignment.
+
 ![intro](figs/numclip.png)
 
 ## Quick Preview
 
+### Img2Lang Concept
+NumCLIP mimics human numerical cognition: mapping an image feature to a language concept first, and then reasoning the number.
+<p align="center">
+    <img src="figs/img_lang_num.png" width="500"> <br>
 
+This paradigm can be condcuted in a coarse-to-fine manner. From that we elegantly convert an dense regression task into a simple and coarse classification problem, which not only smoothly mitigates the insufficient number caption issue, but also effectively utilises/recalls the pre-trained/available concept alignment learned by CLIP.
 
+### Cross-modal Ranking-based Feature Regularization
+The cross-modal negative samples are pushed away with ordinal label distance alignment.
 ```python
     def compute_ce_dis_loss(self,logits,y,d):
 
