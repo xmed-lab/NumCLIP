@@ -49,6 +49,7 @@ We utilize the code base of [OrdinalCLIP](https://github.com/xk-huang/OrdinalCLI
 
 ## Model Training
 Before training the model, move `regclipssr.py` to `./ordinalclip/models/`, and `runner_ssr.py` to `./ordinalclip/runner/` accordingly.
+And also change the path in run.py (`from ordinalclip.runner.runner_ssr import Runner`).
 
 ```bash
 sh scripts/run_regclipssr.sh
