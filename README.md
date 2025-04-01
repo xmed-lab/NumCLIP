@@ -74,10 +74,12 @@ Check out these amazing works leveraging CLIP for number problems!
 If you find this codebase helpful, please consider to cite:
 
 ```
-@article{du2024teach,
-  title={Teach CLIP to Develop a Number Sense for Ordinal Regression},
+@inproceedings{du2024teach,
+  title={Teach clip to develop a number sense for ordinal regression},
   author={Du, Yao and Zhai, Qiang and Dai, Weihang and Li, Xiaomeng},
-  journal={arXiv preprint arXiv:2408.03574},
-  year={2024}
+  booktitle={European Conference on Computer Vision},
+  pages={1--17},
+  year={2024},
+  organization={Springer}
 }
 ```
